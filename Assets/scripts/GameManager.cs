@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI MainText;
+    public TextMeshProUGUI DialogText;
 
 
     // Start is called before the first frame update
@@ -21,6 +22,26 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         float fr = Input.GetAxisRaw("Horizontal");
-        Debug.Log("axis hori: " + fr);
+        //Debug.Log("axis hori: " + fr);
+        if(Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            //
+            DialogText.text = "아래로 한칸 이동";
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            //
+            DialogText.text = "위로 한칸 이동";
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            //
+            DialogText.text = "왼쪽으로 한칸 이동";
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            //
+            DialogText.text = "오른쪽으로 한칸 이동";
+        }
     }
 }
