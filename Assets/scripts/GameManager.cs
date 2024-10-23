@@ -7,14 +7,14 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI MainText;
 
 
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("------- Text Rpg Start ------------");
-        text.text = "rpg Game Start~~~";
+        MainText.text = "Rpg Game Start~~~";
     }
 
     // Update is called once per frame
